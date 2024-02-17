@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .main-content {
+        display: flex;
+        justify-content: center; /* Horizontally center */
+        align-items: center; /* Vertically center */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+      }
+
+      .box {
+        margin: 10px;
+        padding: 30px;
+        background-color: red;
+        border-radius: 30px;
+      }
+    </style>
+    <title>Center Text</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="box">Text</div>
+    </div>
+  </body>
+</html>

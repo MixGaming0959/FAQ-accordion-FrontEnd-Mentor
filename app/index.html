@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../assets/images/favicon-32x32.png"
+      href="assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Work+Sans">
@@ -20,22 +20,23 @@
     <style></style>
   </head>
   <body>
-    <img src="../assets/images/background-pattern-desktop.svg" alt="img-bg" class="img-bg" />
+    <img src="assets/images/background-pattern-desktop.svg" alt="img-bg" class="img-bg" />
     <div class="main-content">
       <div class="box">
         
         <div class="FAQ">
-          <h1 style="font-size: 55px">
-            <img src="../assets/images/icon-star.svg" alt="icon-star" style="margin-right: 25px;"/>FAQs
-          </h1>
+          <p>
+            <img src="assets/images/icon-star.svg" alt="icon-star" style="margin-right: 25px;"/>
+            FAQs
+          </p>
         </div>
 
         <div class="box-A"">
           <p>
-            <b>What is Frontend Mentor, and how will it help me?</b>
+            <b onclick="toggleText('1')">What is Frontend Mentor, and how will it help me?</b>
   
             <button onclick="toggleText('1')">
-              <img id="icon1" src="../assets/images/icon-plus.svg" alt="icon-plus" />
+              <img id="icon1" src="assets/images/icon-plus.svg" alt="icon-plus" />
             </button>
           </p>
           <p id="hiddenText-btn1">
@@ -50,10 +51,10 @@
 
         <div class="box-B" >
           <p>
-            <b>Is Frontend Mentor free?</b>
+            <b onclick="toggleText('2')">Is Frontend Mentor free?</b>
   
             <button onclick="toggleText('2')">
-              <img id="icon2" src="../assets/images/icon-plus.svg" alt="icon-plus" />
+              <img id="icon2" src="assets/images/icon-plus.svg" alt="icon-plus" />
             </button>
           </p>
           <p id="hiddenText-btn2">
@@ -65,10 +66,10 @@
 
         <div class="box-C" >
           <p>
-            <b>Can I use Frontend Mentor projects in my portfolio?</b>
+            <b onclick="toggleText('3')">Can I use Frontend Mentor projects in my portfolio?</b>
   
             <button onclick="toggleText('3')">
-              <img id="icon3" src="../assets/images/icon-plus.svg" alt="icon-plus" />
+              <img id="icon3" src="assets/images/icon-plus.svg" alt="icon-plus" />
             </button>
           </p>
           <p id="hiddenText-btn3">
@@ -80,9 +81,9 @@
 
         <div class="box-D" >
           <p>
-            <b>How can I get help if I'm stuck on a Frontend Mentor challenge?</b>
+            <b onclick="toggleText('4')">How can I get help if I'm stuck on a Frontend Mentor challenge?</b>
             <button onclick="toggleText('4')">
-              <img id="icon4" src="../assets/images/icon-plus.svg" alt="icon-plus" />
+              <img id="icon4" src="assets/images/icon-plus.svg" alt="icon-plus" />
             </button>
           </p>
           <p id="hiddenText-btn4">
@@ -106,11 +107,11 @@
         var hiddenText = document.getElementById("hiddenText-btn" + x);
         var icon = document.getElementById('icon' + x)
         if (icon.getAttribute('alt') == "icon-plus"){
-          icon.setAttribute("src", "../assets/images/icon-minus.svg");
+          icon.setAttribute("src", "assets/images/icon-minus.svg");
           icon.setAttribute("alt", "icon-minus");
         }
         else{
-          icon.setAttribute("src", "../assets/images/icon-plus.svg");
+          icon.setAttribute("src", "assets/images/icon-plus.svg");
           icon.setAttribute("alt", "icon-plus");
         }
         hiddenText.style.display =

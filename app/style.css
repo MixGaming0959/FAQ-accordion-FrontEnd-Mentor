@@ -3,8 +3,23 @@
 
 html, body {
     background-color: #F9EEFF;
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    padding: 10px;
+}
+
+@font-face {
+    font-family: "WorkSans-Bold";
+    src: url('assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "WorkSans-Regular";
+    src: url('assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "WorkSans-SemiBold";
+    src: url('assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
 }
 
 .img-bg{
@@ -12,14 +27,15 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 30vh; 
+    height: 40vh; 
     object-fit: cover; 
     z-index: 1; 
 }
 
 p, h1 {
     display: flex;
-    font-family: 'Work Sans', sans-serif;
+    justify-content: space-between;
+    font-family: 'WorkSans-SemiBold';
 }
 
 button {
@@ -27,13 +43,15 @@ button {
     cursor: pointer;
     appearance: none;
     background-color: inherit;
+    text-align: center;
 }
 
 b {
     color: hsl(292, 42%, 14%);
     display: flex;
     align-items: center; 
-    
+    text-align: center;
+    cursor: pointer;
 }
 b:hover {
     color: #AD28E9;
@@ -44,24 +62,37 @@ b:hover {
     margin-top: 10px;
     opacity: 0.7;
     margin: 10px;
-    line-height:25px
+    line-height:25px;
+    font-family: 'WorkSans-Regular';
 }
 
-.main-content {
+.main-content { 
+    padding-top : 80px;
     max-width: 700px;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
     margin: auto;
     position: relative;
     z-index: 2;
 }
 
 .box {
-    margin-block: 100px;
+    margin: 10px;
     padding: 30px;
     background-color: white;
-    border-radius: 30px;
-    
+    border-radius: 15px;
 }
 
 .box-B,.box-C,.box-D{
     border-top: 1px solid rgb(140, 105, 145, .1);
+}
+
+.FAQ p {
+    font-size: 55px; 
+    justify-content:left;
+    margin-block: 10px;
+    font-family: 'WorkSans-Bold'; 
 }
